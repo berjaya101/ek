@@ -139,7 +139,9 @@
     padding-bottom: 15px;
     padding-top: 5px;
 }
-
+#post-content h2{
+    font-size: 2em;
+}
 #post-title h2 a{
    color: #555555;
 }
@@ -200,6 +202,14 @@ div#home-cover a:hover{
     text-align: left;
     background-color: #778976;
     color: #fff;
+}
+
+.article-menu{
+
+}
+
+.article-menu h2{
+    font-size: 2em;
 }
 
 
