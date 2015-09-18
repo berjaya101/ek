@@ -1,181 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Kerjaya &mdash; Panduan Kerjaya Anda</title>    <meta name="author" content="Ebook Kerjaya">
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="/assets/media/favicon.ico" type="image/x-icon">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ebook Kerjaya &mdash; Panduan Kerjaya Anda</title>
+    <meta name="description" content="Personal web application development playground.">
+    
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Ebook Kerjaya"/>
+<meta property="og:description" content=""/>
+<meta property="og:site_name" content="Ebook Kerjaya"/>
+<meta property="og:url" content="http://localhost:1313/"/>
+<meta property="fb:admins" content="550321389"/>
 
-<link href='/assets/stylesheets/font-awesome.min-feda974a77ea5783b8be673f142b7c88.css' type='text/css' rel='stylesheet' media='all'>
-<link href='/assets/stylesheets/foundation.min-3fe4e06bab257765c1d87871d76c56e4.css' type='text/css' rel='stylesheet' media='all'>
-<link href='/assets/stylesheets/normalize-1e9c0f3b13da66012ea079bc1509fef2.css' type='text/css' rel='stylesheet' media='all'>
-<link href='/assets/stylesheets/style-d2baf8f2bcf7849fe64ab3835c7f83c7.css' type='text/css' rel='stylesheet' media='all'></head>
+<link rel='stylesheet' href='/assets/semanticui/semantic.css' type='text/css'/>
+<link rel='stylesheet' href='/assets/stylesheets/font-awesome.min.css' type='text/css'/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet">
+<link rel='stylesheet' href='/assets/stylesheets/style.css' type='text/css'/>
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Ebook Kerjaya" />
+    <meta property="og:image" content="http://localhost:1313/media/fbimg.png"/>
+    
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '427272137436565');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=427272137436565&ev=PageView&noscript=1"
+        /></noscript>
+
+</head>
 <body>
-<div class="columns medium-12 wrapper">
-    
+<div class="wrapper">
+    <div class="content-wrapper">
 
-<nav class="top-bar contain-to-grid show-for-small-only" data-topbar>
-    <ul class="title-area">
-        <li class="name">
-            <h2><a href="/">Ebook Kerjaya</a></h2>
-        </li>
-        <li class="toggle-topbar menu-icon">
-            <a href="#">Menu</a>
-        </li>
-    </ul>
-    <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-            <li class="active"></li>
-            <li class="has-dropdown">
-                <a href="#">Rujukan</a>
-                <ul class="dropdown">
-                    <li>
-                        <a rel="nofollow" href="/rujukan">Rujukan Kerjaya</a>
-                    </li>
-                    <li>
-                        <a rel="nofollow" href="/rujukan/separa-perubatan">Separa Perubatan</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-</nav>
-
-
-<div class="columns sidebar hide-for-small-only large-2 medium-3">
-    <div class="hide-for-small-only" id="header">
-        <h2><a href="/" rel="nofollow">Ebook Kerjaya</a></h2>
-        <div id="menu">
-            <ul class="side-nav">
-                <li class="active">
-                    <a href="/" rel="nofollow">Home</a>
-                </li>
-                <li>
-                    <a href="/rujukan" rel="nofollow">Rujukan</a>
-                </li>
-                <li>
-                    <a href="/temuduga" rel="nofollow">Temuduga</a>
-                </li>
-                <li>
-                    <a href="/resume" rel="nofollow">Resume</a>
-                </li>
-                <li>
-                    <a href="/pengumuman" rel="nofollow">Pengumuman</a>
-                </li>
-            </ul>
+        <div class="menu-wrapper">
+    <div class="ui secondary inverted pointing menu mymenu">
+        <a class="item disabled mybrand" href="/"><b>Ebook Kerjaya</b></a>
+        <div class="right menu">
+            <a class="item" href="/"><i class="home large icon"></i></a>
+            <a class="item" href="/blog">Blog</a>
+            <a class="item" href="/about">About</a>
         </div>
     </div>
 </div>
 
-<div class="columns medium-9 large-7 large-pull-2">
-    <div class="columns medium-10 medium-push-1" id="contentwrapper">
-        <div class="" id="content">
-            <div id="home-news">
-                <div class="news-title">Pengumuman</div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/pengumuman/2015/arpah-abdul-razak-dilantik-pengerusi-spa">Arpah Abdul Razak Dilantik Pengerusi SPA Baharu</a></h2>
+        <div class="main-content-wrapper">
+            <div class="article-single">
+                <div class="homepage">
+                    <h3>Artikel Terkini</h3>
+                    
+                    
+                    <div class="entry">
+                        <div class="view">
+                            <h2><a href="/blog/kesilapan-graduan-tulis-emel-mohon-kerja/">Kesilapan Graduan Ketika Tulis Emel Mohon Pekerjaan</a></h2>
+                        </div>
                     </div>
-                    <div id="post-content">
-                        Berita tentang Dato Arpah Abdul Razak dilantik Pengerusi SPA baharu menggantikan Tan Sri Mahmood Adam
+                    
+                    
+                    
+                    <div class="entry">
+                        <div class="view">
+                            <h2><a href="/blog/memperkenalkan-diri-ketika-temuduga/">Cara Memperkenalkan Diri Ketika Temuduga</a></h2>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div id="home-temuduga">
-                <div class="temuduga-title">Temuduga</div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/temuduga/memperkenalkan-diri-ketika-temuduga">Cara Memperkenalkan Diri Ketika Temuduga</a></h2>
-                    </div>
-                    <div id="post-content">
-                        Nasihat tentang cara memperkenalkan diri ketika sesi temuduga. Khas untuk mereka yang akan menghadiri temuduga dalam masa terdekat.
-                    </div>
-                </div>
-            </div>
-            <div id="home-resume">
-                <div class="resume-title">Resume & CV</div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/resume/kesilapan-graduan-tulis-emel-mohon-kerja">Kesilapan Graduan Ketika Tulis Emel Mohon Pekerjaan</a></h2>
-                    </div>
-                    <div id="post-content">
-                        Kesilapan yang perlu dielakkan boleh graduan ketika tulis emel mohon pekerjaan.
+                    
+                    
+                    <h3>Rujukan</h3>
+                    <div class="entry">
+                        <div class="view">
+                            <h2><a href="/rujukan/separa-perubatan">Separa Perubatan</a></h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="home-rujukan">
-                <div class="rujukan-title">Rujukan</div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/rujukan/separa-perubatan/draft/diploma-farmasi">Diploma Farmasi</a></h2>
-                    </div>
-                    <div id="post-content">
-                        Maklumat ringkas mengenai Diploma Farmasi anjuran Kementerian Kesihatan Malaysia.
-                    </div>
-                </div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/rujukan/separa-perubatan/draft/diploma-juru-x-ray">Diploma Juru X-Ray</a></h2>
-                    </div>
-                    <div id="post-content">
-                        Maklumat ringkas mengenai Diploma Juru X-Ray anjuran Kementerian Kesihatan Malaysia.
-                    </div>
-                </div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/rujukan/separa-perubatan/draft/diploma-jurupulih-perubatan-anggota">Diploma Jurupulih Perubatan Anggota</a></h2>
-                    </div>
-                    <div id="post-content">
-                        Maklumat mengenai Diploma Jurupulih Perubatan Anggota anjuran Kementerian Kesihatan Malaysia.
-                    </div>
-                </div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/rujukan/separa-perubatan/draft/diploma-jurupulih-perubatan-carakerja">Diploma Jurupulih Perubatan Carakerja</a></h2>
-                    </div>
-                    <div id="post-content">
-                        
-                    </div>
-                </div>
-                <div class="eachpost">
-                    <div id="post-title">
-                        <h2><a href="/rujukan/separa-perubatan/draft/diploma-jururawat-pergigian">Diploma Jururawat Pergigian</a></h2>
-                    </div>
-                    <div id="post-content">
-                        
-                    </div>
+            <div class="blog-nav ui one item menu mynav">
+                <div class="ui secondary pointing menu">
+                    <a class="item" href="/pengumuman">Pengumuman</a>
                 </div>
             </div>
         </div>
-        <div id="pagination">
-            <ul class="pagination">
-            </ul>
-        </div>
-        <div class="" id="footer">
-            <div class="text-center">
-                <p>www.ebookkerjaya.com &mdash; 2015</p>
-            </div>
-        </div>
-    </div>
+
+        <div class="footer-wrapper">
+    <div class="left-side">Made with <i class="fa fa-heart love"></i> in Malaysia</div>
+    <div class="right-side"><label class="ui tiny blue label">2015</label></div>
 </div>
 
+
+
+
+    </div>
 </div>
-<script src='/assets/javascripts/jquery.min-056fd2a776eae867b7e2b5ddcb754d78.js'></script>
-<script src='/assets/javascripts/foundation.min-f45cf38dc5ae9bf3c82c4c49ca028af5.js'></script>    <script>
-        $(document).foundation();
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-        ga('create', 'UA-58221086-2', 'auto');
-        ga('send', 'pageview');
-    
-    </script>
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
