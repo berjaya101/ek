@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Ebook Kerjaya</title>
-    <link>http://www.ebookkerjaya.com/go/</link>
+    <link>https://www.ebookkerjaya.com/go/</link>
     <description>Recent content in Go on Ebook Kerjaya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 May 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.ebookkerjaya.com/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ebookkerjaya.com/go/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Senarai Agensi Kerajaan</title>
-      <link>http://www.ebookkerjaya.com/go/agensi-kerajaan/</link>
+      <link>https://www.ebookkerjaya.com/go/agensi-kerajaan/</link>
       <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ebookkerjaya.com/go/agensi-kerajaan/</guid>
+      <guid>https://www.ebookkerjaya.com/go/agensi-kerajaan/</guid>
       <description></description>
     </item>
     
