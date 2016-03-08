@@ -568,4 +568,21 @@ h6 {
 .terms .tag a:hover h2 {
   color: #000; }
 
+.embed {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 1em 0; }
+.embed embed,
+.embed object,
+.embed iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%; }
+.banner img{
+  display: inline-block !important;
+}
 /*# sourceMappingURL=flex.css.map */
