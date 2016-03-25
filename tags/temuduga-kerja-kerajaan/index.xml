@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Download on Ebook Kerjaya</title>
-    <link>https://www.ebookkerjaya.com/categories/download/</link>
-    <description>Recent content in Download on Ebook Kerjaya</description>
+    <title>Temuduga Kerja Kerajaan on Ebook Kerjaya</title>
+    <link>https://www.ebookkerjaya.com/tags/temuduga-kerja-kerajaan/</link>
+    <description>Recent content in Temuduga Kerja Kerajaan on Ebook Kerjaya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Mar 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.ebookkerjaya.com/categories/download/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ebookkerjaya.com/tags/temuduga-kerja-kerajaan/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Asas Menghadiri Temuduga Kerja Kerajaan</title>
@@ -15,15 +15,6 @@
       <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.ebookkerjaya.com/go/asas-menghadiri-temuduga-kerja-kerajaan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Manual Pengguna SPA8i</title>
-      <link>https://www.ebookkerjaya.com/go/manual-pengguna-spa8i/</link>
-      <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ebookkerjaya.com/go/manual-pengguna-spa8i/</guid>
       <description></description>
     </item>
     
