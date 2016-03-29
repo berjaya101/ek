@@ -35,53 +35,84 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="single">
-                <div class="main">
-                    <div class="main-wrapper">
-                        <div class="article">
-                            <div class="meta">
-                                <h2>Latihan Penolong Pegawai Farmasi</h2>
-                                <p><label class="label">12 May 2015</label></p>
+        <div class="single">
+            <div class="main">
+                <div class="main-wrapper">
+                    <div class="article">
+                        <div class="meta">
+                            <h2>Latihan Penolong Pegawai Farmasi</h2>
+                            <p>
                                 
-                                <img src="/media/rujukan/kerjaya-penolong-pegawai-farmasi.png" alt="Latihan Penolong Pegawai Farmasi">
                                 
-                            </div>
-                            
+                                <label class="label">12 May 2015</label>
+                                
+                                <label class="label"><i class="fa fa-user"></i>
+                                    
+                                    Tim Ebook Kerjaya
+                                    
+                                </label>
+                            </p>
+                        </div>
+                        
+
+
+<figure >
+    
+        <img src="/media/rujukan/kerjaya-penolong-pegawai-farmasi.png" alt="Kerjaya Penolong Pegawai Farmasi" />
+    
+    
+    <figcaption>
+        <p>
+        Kerjaya sebagai Penolong Pegawai Farmasi.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Berikut adalah kelayakan bagi bagi mengikuti program Latihan Penolong Pegawai Farmasi:</p>
 
@@ -131,129 +162,111 @@
 
 <p>Semoga artikel ini bermanfaan buat anda dan kongsikan artikel ini dengan kawan-kawan di FB ya!</p>
 
-                            <div class="meta fb">
-                                <div class="fb-like" data-href="https://www.ebookkerjaya.com/rujukan/separa-perubatan/latihan-penolong-pegawai-farmasi/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                            </div>
-                            <div class="meta tags">
-                                
+                        <div class="meta fb">
+                            <div
+    class="fb-like"
+    data-href="https://www.ebookkerjaya.com/rujukan/separa-perubatan/latihan-penolong-pegawai-farmasi/"
+    data-layout="button_count"
+    data-action="like"
+    data-show-faces="true"
+    data-share="true">
+</div>
+                        </div>
+
+
+                        <div class="meta tags">
+                            
     
     <label class="label">latihan penolong pegawai farmasi</label>
     
     <label class="label">penolong pegawai farmasi gred u29</label>
     
 
-                            </div>
-                            <div class="meta comments">
-                                
-<div class="fb-comments" data-href="https://www.ebookkerjaya.com/rujukan/separa-perubatan/latihan-penolong-pegawai-farmasi/" data-width="100%" data-numposts="5"></div>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function() {
-        
-        
-        if (window.location.hostname == "localhost")
-            return;
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        var disqus_shortname = 'ebookkerjaya';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagibar">
-                        <div class="item">
-                            <a href="/rujukan/separa-perubatan/latihan-pembantu-pembedahan-pergigian/" title=" Latihan Pembantu Pembedahan Pergigian " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/"><i class="fa fa-2x fa-home"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/rujukan/separa-perubatan/latihan-penolong-pegawai-kesihatan-persekitaran/" title="Latihan Penolong Pegawai Kesihatan Persekitaran " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
-
-                        <a href="/rujukan/separa-perubatan/latihan-jurupulih-perubatan-anggota/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-jurupulih-perubatan-anggota-u29-300.png" alt="diploma jurupulih perubatan anggota u29">
-                        </a>
+                <div class="pagibar">
+                    <div class="item">
+                        <a href="/rujukan/separa-perubatan/latihan-pembantu-pembedahan-pergigian/" title=" Latihan Pembantu Pembedahan Pergigian " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
                     </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-jurupulih-perubatan-cara-kerja/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-jurupulih-perubatan-cara-kerja-u29-300.png" alt="diploma jurupulih perubatan cara kerja u29">
-                        </a>
+                    <div class="item">
+                        <a href="/"><i class="fa fa-2x fa-home"></i></a>
                     </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-jururawat/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-jururawat-u29-300.png" alt="diploma jururawat u29">
-                        </a>
-                    </div>
-
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-jururawat-pergigian/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-jururawat-pergigian-u29-300.png" alt="diploma jururawat pergigian u29">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-juruteknologi-makmal-perubatan/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-teknologi-makmal-perubatan-u29-300.png" alt="diploma teknologi makmal perubatan u29">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-juruteknologi-pergigian/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-teknologi-pergigian-u29-300.png" alt="diploma teknologi pergigian u29">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-juru-x-ray/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-juru-xray-u29-300.png" alt="diploma juru xray u29">
-                        </a>
-                    </div>
-
-
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-penolong-pegawai-farmasi/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-farmasi-u29-300.png" alt="diploma farmasi u29">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-penolong-pegawai-kesihatan-persekitaran/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-kesihatan-persekitaran-u29-300.png" alt="diploma kesihatan persekitaran u29">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-penolong-pegawai-perubatan/">
-                            <img src="/media/rujukan/separa-perubatan-diploma-pembantu-perubatan-u29-300.png" alt="diploma pembantu perubatan u29">
-                        </a>
-                    </div>
-
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-pembantu-pembedahan-pergigian/">
-                            <img src="/media/rujukan/separa-perubatan-sijil-pembantu-pembedahan-pergigian-u19-300.png" alt="sijil pembantu pembedahan pergigian u19">
-                        </a>
-                    </div>
-
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-pembantu-kesihatan-awam/">
-                            <img src="/media/rujukan/separa-perubatan-sijil-pembantu-kesihatan-awam-u19-300.png" alt="sijil pembantu kesihatan awam u19">
-                        </a>
-                    </div>
-                    <div class="widget">
-                        <a href="/rujukan/separa-perubatan/latihan-jururawat-masyarakat/">
-                            <img src="/media/rujukan/separa-perubatan-sijil-jururawat-masyarakat-u19-300.png" alt="sijil jururawat masyarakat u19">
-                        </a>
+                    <div class="item">
+                        <a href="/rujukan/separa-perubatan/latihan-penolong-pegawai-kesihatan-persekitaran/" title="Latihan Penolong Pegawai Kesihatan Persekitaran " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="aside">
+                <div class="widget">
+    <h2>Artikel Terkini</h2>
 
+        
+        
+            
+            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
+
+            
+        
+        </ul>
+</div>
+
+                
+
+                
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                    
+
+                    
+                        
+
+                        
+                        
+                    
+
+                    
+                        
+                    
+                
+            </div>
         </div>
     </div>
     <div class="footer">

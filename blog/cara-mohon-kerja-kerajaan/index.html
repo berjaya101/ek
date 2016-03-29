@@ -35,53 +35,88 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="single">
-                <div class="main">
-                    <div class="main-wrapper">
-                        <div class="article">
-                            <div class="meta">
-                                <h2>Bagaimana Cara Mohon Kerja Kosong Kerajaan?</h2>
-                                <p><label class="label">14 Nov 2015</label></p>
+        <div class="single">
+            <div class="main">
+                <div class="main-wrapper">
+                    <div class="article">
+                        <div class="meta">
+                            <h2>Bagaimana Cara Mohon Kerja Kosong Kerajaan?</h2>
+
+                            <p>
                                 
-                                <img src="/media/blog/cara-mohon-kerja-kerajaan.png" alt="Bagaimana Cara Mohon Kerja Kosong Kerajaan?">
+                                <label class="label"><i class="fa fa-anchor"></i> kerja kerajaan</label>
                                 
-                            </div>
-                            
+                                
+                                    <label class="label">14 Nov 2015</label>
+                                
+                                <label class="label"><i class="fa fa-user"></i>
+                                    
+                                    Tim Ebook Kerjaya
+                                    
+                                </label>
+                            </p>
+
+                        </div>
+                        
+
+
+<figure >
+    
+        <img src="/media/blog/cara-mohon-kerja-kerajaan.png" alt="Mohon Kerja Kosong Kerajaan" />
+    
+    
+    <figcaption>
+        <p>
+        Cara mohon kerja kerajaan.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Dalam artikel ini kita akan berbincang tentang cara untuk mendapat pekerjaan dalam sektor awam. Bagaimana caranya untuk kita dapat kerja kerajaan?</p>
 
@@ -193,7 +228,7 @@
 
 <p>Percaya tak?</p>
 
-<p>Ada calon yang datang dengan memakai selipar Jepun. SELIPAR JEPUN!</p>
+<p>Ada calon yang datang ke sesi temuduga tanpa memakai kasut bertutup.</p>
 
 <p>Selalunya, selepas berjaya diperingkat temuduga, anda sudah boleh tersenyum lebar.</p>
 
@@ -205,7 +240,7 @@
 
 <p>Sekarang anda sudah pun mengetahui cara untuk mendapat kerja kerajaan melalui SPA. Apa lagi? Cepat ambil tindakan.</p>
 
-<p>Daftar akaun SPA8i dulu!</p>
+<p><a href="/blog/cara-daftar-akaun-spa8i/">Daftar akaun SPA8i</a> dulu!</p>
 
 <p>Kami doakan anda berjaya mendapat pekerjaan dalam sektor awam, kerja kerajaan.</p>
 
@@ -214,11 +249,19 @@
 </div>
 </p>
 
-                            <div class="meta fb">
-                                <div class="fb-like" data-href="https://www.ebookkerjaya.com/blog/cara-mohon-kerja-kerajaan/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                            </div>
-                            <div class="meta tags">
-                                
+                        <div class="meta fb">
+                            <div
+    class="fb-like"
+    data-href="https://www.ebookkerjaya.com/blog/cara-mohon-kerja-kerajaan/"
+    data-layout="button_count"
+    data-action="like"
+    data-show-faces="true"
+    data-share="true">
+</div>
+                        </div>
+
+                        <div class="meta tags">
+                            
     
     <label class="label">cara mohon kerja kerajaan</label>
     
@@ -229,9 +272,9 @@
     <label class="label">daftar akaun baru spa8i</label>
     
 
-                            </div>
-                            <div class="meta comments">
-                                
+                        </div>
+                        <div class="meta comments">
+                            
 <div class="fb-comments" data-href="https://www.ebookkerjaya.com/blog/cara-mohon-kerja-kerajaan/" data-width="100%" data-numposts="5"></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -251,23 +294,59 @@
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagibar">
-                        <div class="item">
-                            <a href="/blog/prospek-kerjaya-jururawat-kkm/" title=" Peluang Kerjaya Jururawat Di Kementerian Kesihatan Malaysia " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/"><i class="fa fa-2x fa-home"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/blog/cara-menjadi-jururawat-selepas-spm/" title="Cara Menjadi Jururawat " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
+                <div class="pagibar">
+                    <div class="item">
+                        <a href="/blog/prospek-kerjaya-jururawat-kkm/" title=" Peluang Kerjaya Jururawat Di Kementerian Kesihatan Malaysia " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/blog/cara-menjadi-jururawat-selepas-spm/" title="Bagaimana Cara Jadi Jururawat Selepas SPM? " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="widget">
+    <h2>Artikel Terkini</h2>
+
+        
+        
+            
+            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
+
+            
+        
+        </ul>
+</div>
+                <div class="widget">
     <h2>Pengumuman</h2>
 
         
@@ -305,45 +384,7 @@
 
 
 </div>
-                    <div class="widget">
-    <h2>Artikel Terkini</h2>
-
-        
-        
-            
-            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
-
-            
-        
-        </ul>
-</div>
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">

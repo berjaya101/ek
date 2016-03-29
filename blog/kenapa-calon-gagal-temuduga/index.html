@@ -35,62 +35,113 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="single">
-                <div class="main">
-                    <div class="main-wrapper">
-                        <div class="article">
-                            <div class="meta">
-                                <h2>Kenapa Calon Gagal Temuduga?</h2>
-                                <p><label class="label">6 Jan 2016</label></p>
+        <div class="single">
+            <div class="main">
+                <div class="main-wrapper">
+                    <div class="article">
+                        <div class="meta">
+                            <h2>Kenapa Calon Gagal Temuduga?</h2>
+
+                            <p>
                                 
-                                <img src="/media/blog/kenapa-calon-gagal-temuduga.png" alt="Kenapa Calon Gagal Temuduga?">
+                                <label class="label"><i class="fa fa-anchor"></i> temuduga kerja</label>
                                 
-                            </div>
-                            
+                                
+                                    <label class="label">6 Jan 2016</label>
+                                
+                                <label class="label"><i class="fa fa-user"></i>
+                                    
+                                    Tim Ebook Kerjaya
+                                    
+                                </label>
+                            </p>
+
+                        </div>
+                        
+
+
+<figure >
+    
+        <img src="/media/blog/kenapa-calon-gagal-temuduga.png" alt="Sebab Calon Gagal Temuduga" />
+    
+    
+    <figcaption>
+        <p>
+        Kenapa calon gagal temuduga.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Bismillah. <br>
 Assalamualaikum.</p>
 
-<p>Kami ajukan soalan emas ini kepada anda.</p>
+<p>Kami pernah mengajukan soalan emas ini kepada subscriber kami.</p>
 
 <p><strong>&ldquo;Kenapa ramai calon gagal temuduga?&rdquo;</strong></p>
 
-<p><img src="/media/blog/survey-sebab-gagal-temuduga.png" alt="Survey Sebab Gagal Temuduga" /></p>
+
+<figure >
+    
+        <img src="/media/blog/survey-sebab-gagal-temuduga.png" alt="Survey Sebab Gagal Temuduga" />
+    
+    
+    <figcaption>
+        <p>
+        Survey sebab gagal temuduga.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Hasil dari survey yang kami lakukan, dapat disimpulkan ramai yang menyatakan mereka gagal disebabkan oleh 2 faktor utama. Iaitu:</p>
 
@@ -109,17 +160,19 @@ Assalamualaikum.</p>
 
 <h2 id="masalah-penampilan:2719f6bc88cb71a5b077dc1cae60288f">Masalah Penampilan</h2>
 
-<p>Masalah penampilan diri itu mudah untuk diperbaiki. Anda sendiri tahu apa yang perlu dilakukan. Perkemaskan lagi penampilan diri anda ketika hadir ke sesi temuduga. Pakai pakaian yang kemas dan bersesuaian dengan jawatan yang dipohon.</p>
+<p>Masalah penampilan diri itu mudah untuk diperbaiki. Anda hanya perlu perkemaskan lagi penampilan diri anda ketika hadir ke sesi temuduga. Pakai pakaian yang kemas dan sesuai dengan jawatan yang dipohon.</p>
 
 <p>Umumnya, ketika hadir ke sesi temuduga, pakai pakaian yang bewarna cerah serta kasut yang bertutup. Kemaskan misai dan janggut serta banyakkan senyum.</p>
 
-<p><strong>Baca [ <a href="/blog/kesilapan-graduan-tulis-emel-mohon-kerja/">Kesilapan Graduan Ketika Tulis Emel Mohon Pekerjaan</a> ]</strong></p>
+<p><strong>Baca: [<a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"> Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta </a>]</strong></p>
 
 <h2 id="masalah-persediaan-temuduga:2719f6bc88cb71a5b077dc1cae60288f">Masalah Persediaan Temuduga</h2>
 
 <p>Masalah PERSEDIAAN ini adalah masalah utama yang perlu diselesaikan oleh calon terlebih dahulu. Akibat dari kurang bersedia menghadiri temuduga ini besar sekali.</p>
 
-<p>Disebabkan calon tidak bersedia, calon berasa kurang yakin. Akibat kurang yakin, calon berasa gemuruh dan gementar ketika temuduga. Akibat gemuruh, calon tidak dapat menjawab soalan yang diajukan dengan baik. Akibatnya, kebarangkalian calon gagal dalam sesi temuduga meningkat tinggi.</p>
+<p>Disebabkan calon tidak bersedia, calon berasa kurang yakin. Akibat kurang yakin, calon berasa gemuruh dan gementar ketika temuduga. Akibat gemuruh, calon tidak dapat menjawab soalan yang diajukan dengan baik.</p>
+
+<p>Akhirnya, kebarangkalian calon gagal dalam sesi temuduga meningkat tinggi.</p>
 
 <h2 id="persediaan-menghadiri-temuduga:2719f6bc88cb71a5b077dc1cae60288f">Persediaan Menghadiri Temuduga</h2>
 
@@ -134,21 +187,26 @@ Assalamualaikum.</p>
 
 <p>Ada calon yang hadir ke temuduga dengan tidak mengetahui langsung tentang jawatan yang dipohon. Ini memberikan impresi negatif kepada bakal majikan.</p>
 
-<p><strong>Baca: [ <a href="/blog/cara-jawab-soalan-temuduga-bahasa-inggeris/">Cara Jawab Soalan Temuduga Bahasa Inggeris</a> ]</strong></p>
-
 <p>Banyak lagi perkara yang calon boleh lakukan sebagai persediaan menghadiri temuduga. Kami kongsikan dua dahulu.</p>
 
 <p>Nanti kami akan kongsikan lagi tips menghadiri temuduga kerja.</p>
 
+<p><strong>Baca: [<a href="/blog/memperkenalkan-diri-ketika-temuduga/"> Cara Memperkenalkan Diri Ketika Temuduga </a>]</strong></p>
+
 <h2 id="kerjaya-swasta:2719f6bc88cb71a5b077dc1cae60288f">Kerjaya Swasta</h2>
 
-<p><img src="/media/blog/ebook-panduan-kerjaya-swasta.jpg" alt="Panduan Kerjaya Swasta" height="300px"></p>
+<p>Tahukah anda, sektor swasta memberikan lebih banyak peluang pekerjaan berbanding sektor awam.</p>
 
-<p>Sektor swasta memberikan lebih banyak peluang pekerjaan berbanding sektor awam. Mahukah anda, jika kami dedahkan kepada anda, strategi yang anda boleh gunakan untuk mendapatkan pekerjaan di sektor swasta?</p>
+<p>Mahu tak jika kami dedahkan kepada anda, strategi untuk mendapatkan pekerjaan di sektor swasta?</p>
 
-<p><strong>[ <a href="/go/tempah-ebook-kerjaya-swasta/">Tempah ebook Kerjaya Swasta</a> ]</strong></p>
+<p>Masukkan nama, nombor telefon dan emel anda di bawah:</p>
 
-<p>Antara yang akan anda dapat dalam ebook ini adalah:</p>
+<img style="border-color: transparent" src="/media/banner/ebook-panduan-kerjaya-swasta.jpg" height="300px">
+<div style="max-width: 300px; margin-bottom: 1em">
+    <script type="text/javascript" src="//app.mailerlite.com/data/webforms/96758/c2z8e2.js?v1"></script>
+</div>
+
+<p>Antara isi kandungan dalam ebook ini adalah:</p>
 
 <ul>
 <li>Anda akan tahu bagaimana cara tepat memilih kerjaya</li>
@@ -163,28 +221,34 @@ Assalamualaikum.</p>
 
 <p>dan banyak lagi.</p>
 
-<p><strong>[ <a href="/go/tempah-ebook-kerjaya-swasta/">Tempah ebook Kerjaya Swasta</a> ]</strong></p>
-
 <h2 id="penutup:2719f6bc88cb71a5b077dc1cae60288f">Penutup</h2>
 
 <p>Jika anda mempunyai sebarang soalan, emelkan kepada kami di <strong>ebookkerjaya@gmail.com</strong>.</p>
 
 <p>Kami akan cuba membantu anda sehabis baik. Semoga anda berjaya mendapatkan kerjaya idaman.</p>
 
-                            <div class="meta fb">
-                                <div class="fb-like" data-href="https://www.ebookkerjaya.com/blog/kenapa-calon-gagal-temuduga/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                            </div>
-                            <div class="meta tags">
-                                
+                        <div class="meta fb">
+                            <div
+    class="fb-like"
+    data-href="https://www.ebookkerjaya.com/blog/kenapa-calon-gagal-temuduga/"
+    data-layout="button_count"
+    data-action="like"
+    data-show-faces="true"
+    data-share="true">
+</div>
+                        </div>
+
+                        <div class="meta tags">
+                            
     
     <label class="label">gagal temuduga</label>
     
     <label class="label">persediaan temuduga</label>
     
 
-                            </div>
-                            <div class="meta comments">
-                                
+                        </div>
+                        <div class="meta comments">
+                            
 <div class="fb-comments" data-href="https://www.ebookkerjaya.com/blog/kenapa-calon-gagal-temuduga/" data-width="100%" data-numposts="5"></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -204,23 +268,59 @@ Assalamualaikum.</p>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagibar">
-                        <div class="item">
-                            <a href="/blog/format-peperiksaan-online-pegawai-tadbir-diplomatik-m41/" title=" Format Peperiksaan Online Pegawai Tadbir Diplomatik " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/"><i class="fa fa-2x fa-home"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/blog/nasihat-kepada-calon-ptd-m41/" title="Nasihat Kepada Calon PTD M41 " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
+                <div class="pagibar">
+                    <div class="item">
+                        <a href="/blog/format-peperiksaan-online-pegawai-tadbir-diplomatik-m41/" title=" Format Peperiksaan Online Pegawai Tadbir Diplomatik M41 " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/blog/nasihat-kepada-calon-ptd-m41/" title="Nasihat Kakak PTD Kepada Calon PTD M41 2016 " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="widget">
+    <h2>Artikel Terkini</h2>
+
+        
+        
+            
+            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
+
+            
+        
+        </ul>
+</div>
+                <div class="widget">
     <h2>Pengumuman</h2>
 
         
@@ -258,45 +358,7 @@ Assalamualaikum.</p>
 
 
 </div>
-                    <div class="widget">
-    <h2>Artikel Terkini</h2>
-
-        
-        
-            
-            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
-
-            
-        
-        </ul>
-</div>
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">

@@ -35,125 +35,130 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="home">
-                <div class="main">
-                    <div class="main-wrapper">
-
-                        
-                            
-                            <div class="article">
-                                <a href="/blog/cara-daftar-akaun-spa8i/">
-                                    <div class="image">
-                                        
-                                        <img src="/media/blog/cara-daftar-akaun-spa8i-300.png" alt="Cara Daftar Akaun Baru SPA8i">
-                                        
-                                    </div>
-                                    <div class="intro">
-                                        <h2>Cara Daftar Akaun Baru SPA8i</h2>
-                                    </div>
-                                </a>
-
+        <div class="home">
+            <div class="main">
+                <div class="main-wrapper">
+                    
+                    
+                    <div class="article">
+                        <a href="/blog/cara-daftar-akaun-spa8i/">
+                            <div class="image">
+                                
+                                <img src="/media/blog/cara-daftar-akaun-spa8i-300.png" alt="Cara Daftar Akaun Baru SPA8i">
+                                
                             </div>
-                            
-                        
-                            
-                            <div class="article">
-                                <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/">
-                                    <div class="image">
-                                        
-                                        <img src="/media/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd-300.png" alt="Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?">
-                                        
-                                    </div>
-                                    <div class="intro">
-                                        <h2>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h2>
-                                    </div>
-                                </a>
-
+                            <div class="intro">
+                                <h2>Cara Daftar Akaun Baru SPA8i</h2>
                             </div>
-                            
-                        
-                            
-                            <div class="article">
-                                <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/">
-                                    <div class="image">
-                                        
-                                        <img src="/media/blog/contoh-soalan-temuduga-separa-perubatan-spa-300.png" alt="30 Contoh Soalan Temuduga Separa Perubatan SPA">
-                                        
-                                    </div>
-                                    <div class="intro">
-                                        <h2>30 Contoh Soalan Temuduga Separa Perubatan SPA</h2>
-                                    </div>
-                                </a>
+                        </a>
 
-                            </div>
-                            
-                        
-                            
-                            <div class="article">
-                                <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/">
-                                    <div class="image">
-                                        
-                                        <img src="/media/blog/kesilapan-ketika-hadir-temuduga-kerajaan-swasta-300.png" alt="Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta">
-                                        
-                                    </div>
-                                    <div class="intro">
-                                        <h2>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h2>
-                                    </div>
-                                </a>
-
-                            </div>
-                            
-                        
                     </div>
-                    <div class="pagibar">
-                        <div class="item">
-                            <a></a>
-                        </div>
-                        <div class="item">
-                            <a href="/blog/"><i class="fa fa-2x fa-book"> Baca Artikel Lain </i></a>
-                        </div>
-                        <div class="item">
-                            <a></a>
-                        </div>
+                    
+                    
+                    
+                    <div class="article">
+                        <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/">
+                            <div class="image">
+                                
+                                <img src="/media/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd-300.png" alt="Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?">
+                                
+                            </div>
+                            <div class="intro">
+                                <h2>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h2>
+                            </div>
+                        </a>
+
+                    </div>
+                    
+                    
+                    
+                    <div class="article">
+                        <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/">
+                            <div class="image">
+                                
+                                <img src="/media/blog/contoh-soalan-temuduga-separa-perubatan-spa-300.png" alt="30 Contoh Soalan Temuduga Separa Perubatan SPA">
+                                
+                            </div>
+                            <div class="intro">
+                                <h2>30 Contoh Soalan Temuduga Separa Perubatan SPA</h2>
+                            </div>
+                        </a>
+
+                    </div>
+                    
+                    
+                    
+                    <div class="article">
+                        <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/">
+                            <div class="image">
+                                
+                                <img src="/media/blog/kesilapan-ketika-hadir-temuduga-kerajaan-swasta-300.png" alt="Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta">
+                                
+                            </div>
+                            <div class="intro">
+                                <h2>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h2>
+                            </div>
+                        </a>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="pagibar">
+                    <div class="item">
+                        <a></a>
+                    </div>
+                    <div class="item">
+                        <a href="/blog/"><i class="fa fa-2x fa-book"> Baca Artikel Lain </i></a>
+                    </div>
+                    <div class="item">
+                        <a></a>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
+            </div>
+            <div class="aside">
+                <div class="widget">
     <h2>Pengumuman</h2>
 
         
@@ -191,9 +196,7 @@
 
 
 </div>
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">

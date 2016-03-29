@@ -35,46 +35,55 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="single">
-                <div class="main">
-                    <div class="main-wrapper">
-                        <div class="article">
-                            
+        <div class="single">
+            <div class="main">
+                <div class="main-wrapper">
+                    <div class="article">
+                        <div class="meta">
+
+                        </div>
+                        
 
 <h2 id="misi-kami:6083a88ee3411b0d17ce02d738f69d47">Misi Kami</h2>
 
@@ -95,52 +104,21 @@ Ebook Kerjaya di: <strong><a href="https://vimeo.com/ebookkerjaya">Vimeo</a></st
 <em>Maju Bersama</em>,<br>
 <strong>Tim Ebook Kerjaya</strong></p>
 
-                            <div class="meta fb">
-                                <div class="fb-like" data-href="https://www.ebookkerjaya.com/about/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                            </div>
+                        <div class="meta fb">
+                            <div
+    class="fb-like"
+    data-href="https://www.ebookkerjaya.com/about/"
+    data-layout="button_count"
+    data-action="like"
+    data-show-faces="true"
+    data-share="true">
+</div>
                         </div>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
-    <h2>Pengumuman</h2>
-
-        
-        
-            
-            <a href="/pengumuman/2016/temuduga-pegawai-tadbir-diplomatik-m41-mac-april/"><h3>Temuduga Pegawai Tadbir Diplomatik M41 2016</h3></a>
-
-            
-        
-        
-            
-            <a href="/pengumuman/2016/semak-keputusan-peperiksaan-online-separa-perubatan-mac/"><h3>Semak Keputusan Peperiksaan Online Separa Perubatan 8 Mac 2016</h3></a>
-
-            
-        
-        
-            
-            <a href="/pengumuman/2016/update-percuma-ebook-pakej-rujukan-ptd-m41/"><h3>Update Percuma Ebook Pakej Rujukan PTD M41</h3></a>
-
-            
-        
-        
-            
-            <a href="/pengumuman/2016/peperiksaan-online-pegawai-tadbir-diplomatik-ptd-m41/"><h3>Peperiksaan Online Pegawai Tadbir Diplomatik (PTD) M41 2016</h3></a>
-
-            
-        
-        
-            
-        
-        </ul>
-
-
-
-
-
-</div>
-                    <div class="widget">
+            </div>
+            <div class="aside">
+                <div class="widget">
     <h2>Artikel Terkini</h2>
 
         
@@ -176,9 +154,7 @@ Ebook Kerjaya di: <strong><a href="https://vimeo.com/ebookkerjaya">Vimeo</a></st
         
         </ul>
 </div>
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">

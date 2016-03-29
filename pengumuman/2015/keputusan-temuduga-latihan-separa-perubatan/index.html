@@ -35,53 +35,68 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="single">
-                <div class="main">
-                    <div class="main-wrapper">
-                        <div class="article">
-                            <div class="meta">
-                                <h2>Keputusan Temuduga Latihan Separa Perubatan 2015</h2>
-                                <p><label class="label">8 Dec 2015</label></p>
+        <div class="single">
+            <div class="main">
+                <div class="main-wrapper">
+                    <div class="article">
+                        <div class="meta">
+                            <h2>Keputusan Temuduga Latihan Separa Perubatan 2015</h2>
+
+                            <p>
                                 
-                                <img src="/media/pengumuman/semak-keputusan-temuduga-separa-perubatan-2015.png" alt="Keputusan Temuduga Latihan Separa Perubatan">
                                 
-                            </div>
-                            
+                                    <label class="label">8 Dec 2015</label>
+                                
+                                <label class="label"><i class="fa fa-user"></i>
+                                    
+                                    Tim Ebook Kerjaya
+                                    
+                                </label>
+                            </p>
+
+                        </div>
+                        
 
 <p>Alhamdulillah, semua keputusan temuduga Latihan Separa Perubatan telah pun dikeluarkan oleh pihak SPA. Semakan boleh dibuat di portal rasmi mereka.</p>
 
@@ -110,11 +125,19 @@
 
 <p>Salam kejayaan dari kami.</p>
 
-                            <div class="meta fb">
-                                <div class="fb-like" data-href="https://www.ebookkerjaya.com/pengumuman/2015/keputusan-temuduga-latihan-separa-perubatan/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                            </div>
-                            <div class="meta tags">
-                                
+                        <div class="meta fb">
+                            <div
+    class="fb-like"
+    data-href="https://www.ebookkerjaya.com/pengumuman/2015/keputusan-temuduga-latihan-separa-perubatan/"
+    data-layout="button_count"
+    data-action="like"
+    data-show-faces="true"
+    data-share="true">
+</div>
+                        </div>
+
+                        <div class="meta tags">
+                            
     
     <label class="label">keputusan temuduga separa perubatan</label>
     
@@ -123,9 +146,9 @@
     <label class="label">latihan separa perubatan sesi januari 2016</label>
     
 
-                            </div>
-                            <div class="meta comments">
-                                
+                        </div>
+                        <div class="meta comments">
+                            
 <div class="fb-comments" data-href="https://www.ebookkerjaya.com/pengumuman/2015/keputusan-temuduga-latihan-separa-perubatan/" data-width="100%" data-numposts="5"></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -145,23 +168,59 @@
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagibar">
-                        <div class="item">
-                            <a href="/pengumuman/2015/pengumuman-penting-suruhanjaya-perkhidmatan-awam-malaysia-spa/" title=" Pengumuman Penting SuruhanJaya Perkhidmatan Awam Malaysia (SPA) " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/"><i class="fa fa-2x fa-home"></i></a>
-                        </div>
-                        <div class="item">
-                            <a href="/pengumuman/2016/peperiksaan-online-pegawai-tadbir-diplomatik-ptd-m41/" title="Peperiksaan Online Pegawai Tadbir Diplomatik (PTD) M41 " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="aside">
-                    <div class="widget">
+                <div class="pagibar">
+                    <div class="item">
+                        <a href="/pengumuman/2015/pengumuman-penting-suruhanjaya-perkhidmatan-awam-malaysia-spa/" title=" Pengumuman Penting SuruhanJaya Perkhidmatan Awam Malaysia (SPA) " rel="prev"><i class="fa fa-2x fa-arrow-left"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="/pengumuman/2016/peperiksaan-online-pegawai-tadbir-diplomatik-ptd-m41/" title="Peperiksaan Online Pegawai Tadbir Diplomatik (PTD) M41 " rel="next"><i class="fa fa-2x fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="widget">
+    <h2>Artikel Terkini</h2>
+
+        
+        
+            
+            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
+
+            
+        
+        </ul>
+</div>
+                <div class="widget">
     <h2>Pengumuman</h2>
 
         
@@ -199,45 +258,7 @@
 
 
 </div>
-                    <div class="widget">
-    <h2>Artikel Terkini</h2>
-
-        
-        
-            
-            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
-
-            
-        
-        
-            
-            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
-
-            
-        
-        </ul>
-</div>
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">

@@ -35,128 +35,170 @@
     <script src="/assets/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/assets/javascripts/apps.js"></script>
 </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=176088875890298";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body id="ek">
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '808268202629270',
+            xfbml      : true,
+            version    : 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div class="container">
     <div class="header">
         <div class="header-wrapper">
             <div class="topbar">
-    <div class="topbar-wrapper">
-        <ul class="menu">
-            <li class="bold"><a href="/">Ebook Kerjaya</a></li>
-        </ul>
-        <ul class="menu right">
-            <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Info <i class="fa fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="/pengumuman/"><i class="fa fa-angle-right"> </i> Pengumuman</a></li>
-                    <li><a href="/rujukan/"><i class="fa fa-angle-right"> </i> Rujukan Kerjaya</a></li>
-                </ul>
-            </li>
-            <li id="blog"><a href="/blog/">Blog</a></li>
-            <li id="about"><a href="/about/">About</a></li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li class="bold"><a href="/">Ebook Kerjaya</a></li>
+    </ul>
+    <ul class="menu right">
+        <li id="home"><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Info&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+                <li><a href="/pengumuman/"><i class="fa fa-angle-right">&nbsp;</i> Pengumuman</a></li>
+                <li><a href="/rujukan/"><i class="fa fa-angle-right">&nbsp;</i> Rujukan Kerjaya</a></li>
+            </ul>
+        </li>
+        <li id="blog"><a href="/blog/">Blog</a></li>
+        <li id="about"><a href="/about/">About</a></li>
+    </ul>
 </div>
 
         </div>
     </div>
     <div class="content">
-        <div class="content-wrapper">
-            <div class="section">
-                <div class="main">
-                    <div class="main-wrapper">
+        <div class="section">
+            <div class="main">
+                <div class="main-wrapper">
 
-                        
-                        
-
-                        <div class="article">
-                            <a href="/pengumuman/2016/temuduga-pegawai-tadbir-diplomatik-m41-mac-april/">
-                                <div class="image">
-                                    
-                                    <img src="/media/fbimg.png">
-                                    
-                                </div>
-                                <div class="intro">
-                                    <h2>Temuduga Pegawai Tadbir Diplomatik M41 2016</h2>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        
-
-                        <div class="article">
-                            <a href="/pengumuman/2016/semak-keputusan-peperiksaan-online-separa-perubatan-mac/">
-                                <div class="image">
-                                    
-                                    <img src="/media/fbimg.png">
-                                    
-                                </div>
-                                <div class="intro">
-                                    <h2>Semak Keputusan Peperiksaan Online Separa Perubatan 8 Mac 2016</h2>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        
-
-                        <div class="article">
-                            <a href="/pengumuman/2016/update-percuma-ebook-pakej-rujukan-ptd-m41/">
-                                <div class="image">
-                                    
-                                    <img src="/media/fbimg.png">
-                                    
-                                </div>
-                                <div class="intro">
-                                    <h2>Update Percuma Ebook Pakej Rujukan PTD M41</h2>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        
-
-                        <div class="article">
-                            <a href="/pengumuman/2016/peperiksaan-online-pegawai-tadbir-diplomatik-ptd-m41/">
-                                <div class="image">
-                                    
-                                    <img src="/media/fbimg.png">
-                                    
-                                </div>
-                                <div class="intro">
-                                    <h2>Peperiksaan Online Pegawai Tadbir Diplomatik (PTD) M41 2016</h2>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        
-                    </div>
                     
-                        <div class="pagibar">
-                            <div class=" item disable ">
-                                <a href="#"><i class="fa fa-2x fa-arrow-left"></i></a>
+                    
+
+                    <div class="article">
+                        <a href="/pengumuman/2016/temuduga-pegawai-tadbir-diplomatik-m41-mac-april/">
+                            <div class="image">
+                                
+                                <img src="/media/fbimg.png">
+                                
                             </div>
-                            <div class="item">
-                                <p>Page 1 of 3</p>
+                            <div class="intro">
+                                <h2>Temuduga Pegawai Tadbir Diplomatik M41 2016</h2>
                             </div>
-                            <div class=" item ">
-                                <a href="/pengumuman/page/2/"><i class="fa fa-2x fa-arrow-right"></i></a>
+                        </a>
+
+                    </div>
+
+                    
+
+                    <div class="article">
+                        <a href="/pengumuman/2016/semak-keputusan-peperiksaan-online-separa-perubatan-mac/">
+                            <div class="image">
+                                
+                                <img src="/media/fbimg.png">
+                                
                             </div>
-                        </div>
+                            <div class="intro">
+                                <h2>Semak Keputusan Peperiksaan Online Separa Perubatan 8 Mac 2016</h2>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    
+
+                    <div class="article">
+                        <a href="/pengumuman/2016/update-percuma-ebook-pakej-rujukan-ptd-m41/">
+                            <div class="image">
+                                
+                                <img src="/media/fbimg.png">
+                                
+                            </div>
+                            <div class="intro">
+                                <h2>Update Percuma Ebook Pakej Rujukan PTD M41</h2>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    
+
+                    <div class="article">
+                        <a href="/pengumuman/2016/peperiksaan-online-pegawai-tadbir-diplomatik-ptd-m41/">
+                            <div class="image">
+                                
+                                <img src="/media/fbimg.png">
+                                
+                            </div>
+                            <div class="intro">
+                                <h2>Peperiksaan Online Pegawai Tadbir Diplomatik (PTD) M41 2016</h2>
+                            </div>
+                        </a>
+
+                    </div>
+
                     
                 </div>
-                <div class="aside">
-                    <div class="widget">
+                
+                <div class="pagibar">
+                    <div class=" item disable ">
+                        <a href="#"><i class="fa fa-2x fa-arrow-left"></i></a>
+                    </div>
+                    <div class="item">
+                        <p>Page 1 of 3</p>
+                    </div>
+                    <div class=" item ">
+                        <a href="/pengumuman/page/2/"><i class="fa fa-2x fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="aside">
+                <div class="widget">
+    <h2>Artikel Terkini</h2>
+
+        
+        
+            
+            <a href="/blog/cara-daftar-akaun-spa8i/"><h3>Cara Daftar Akaun Baru SPA8i</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/bidang-tugas-pegawai-tadbir-diplomatik-ptd/"><h3>Apakah 8 Bidang Tugas Pegawai Tadbir Diplomatik?</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-separa-perubatan-spa/"><h3>30 Contoh Soalan Temuduga Separa Perubatan SPA</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/kesilapan-ketika-temuduga-kerja-kerajaan-swasta/"><h3>Kesilapan Kritikal Yang Selalu Dilakukan Calon Ketika Menghadiri Temuduga Kerja Kerajaan Dan Swasta</h3></a>
+
+            
+        
+        
+            
+            <a href="/blog/contoh-soalan-temuduga-pegawai-tadbir-n41-mqa/"><h3>Contoh Soalan Temuduga Pegawai Tadbir N41 Agensi Kelayakan Malaysia (MQA)</h3></a>
+
+            
+        
+        </ul>
+</div>
+                <div class="widget">
     <h2>Pengumuman</h2>
 
         
@@ -194,10 +236,7 @@
 
 
 </div>
-
-                </div>
             </div>
-
         </div>
     </div>
     <div class="footer">
@@ -221,3 +260,24 @@
 </script>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
