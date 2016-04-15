@@ -132,7 +132,7 @@ th {
   border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
   padding: 0.75em 0;
-  text-align: center; }
+  text-align: left; }
 
 td {
   border-bottom: 1px solid #ddd;
@@ -142,7 +142,6 @@ tr,
 td,
 th {
   vertical-align: middle; }
-
 
 html {
   margin: 0;
@@ -255,7 +254,24 @@ figure {
   border-top-right-radius: 0.3125em;
   border-bottom-left-radius: 0.3125em;
   border-bottom-right-radius: 0.3125em;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column; }
 figure figcaption {
   margin: 0;
   padding: 0 0.625em;
@@ -309,7 +325,7 @@ label {
   border-top-right-radius: 0.3125em;
   border-bottom-left-radius: 0.3125em;
   border-bottom-right-radius: 0.3125em;
-  padding: 0.3125em 0.625em; }
+  padding: 0.2em 0.625em; }
 
 ul {
   margin: 1em 0 1em 0; }
@@ -763,6 +779,8 @@ html {
 .meta .topic {
   font-weight: bold;
   text-transform: capitalize; }
+.meta label {
+  text-transform: capitalize; }
 
 .tags,
 .category,
@@ -850,6 +868,10 @@ blockquote {
   display: flex; }
 .topbar ul a:hover {
   background-color: #4d4d4d; }
+.topbar ul a i {
+  padding: 0 0.25em; }
+.topbar ul a .fa-home {
+  padding: 0.25em 0.5em; }
 @media screen and (max-width: 767px) {
   .topbar li#home,
   .topbar li#about {
